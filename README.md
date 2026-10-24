@@ -6,8 +6,6 @@ A music video for "Still Alive", the song GLaDOS sings over the credits of *Port
 
 ![Eight moments of the video](docs/still-alive.gif)
 
-![The cover](docs/still-alive-cover.png)
-
 The video was made with Fable 5.1.
 
 ## Requirements
