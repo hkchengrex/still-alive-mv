@@ -1,0 +1,30 @@
+[project]
+name = "analysis"
+version = "0.1.0"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "demucs>=4.0.1",
+    "librosa>=0.10",
+    "matplotlib>=3.8",
+    "numpy",
+    "scipy",
+    "soundfile>=0.12",
+    "soxr",
+    "fonttools>=4.50",
+    "torch",
+    "torchaudio",
+    "whisperx",
+]
+
+# CUDA build of PyTorch (RTX 50-series needs CUDA 12.8+)
+[tool.uv.sources]
+torch = { index = "pytorch-cu128" }
+torchaudio = { index = "pytorch-cu128" }
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[tool.uv]
+package = false

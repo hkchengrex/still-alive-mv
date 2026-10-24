@@ -1,0 +1,20 @@
+node_modules/
+.vite/
+.DS_Store
+
+# renders
+out/
+
+# the song belongs to its rights holders: it stays out of the repository
+audio/*
+!audio/.gitkeep
+
+# the font: fetched by `python app/public/fonts/fetch.py` (docs/PIPELINE.md)
+app/public/fonts/src/
+
+# analysis: the Python environment, model weights and intermediates (large, regenerable)
+analysis/.venv/
+analysis/.cache/
+analysis/__pycache__/
+analysis/work/
+analysis/qa/
